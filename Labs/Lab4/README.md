@@ -16,3 +16,7 @@ React Navigation's stack navigator provides a way for your app to transition bet
 The onPress event handler for the home screen component is specified as () => navigation.navigate('Details'). Can we just say navigation.navigate('Details')? Why or why not?
 Answer #3:
 The  ()=> specifies a anonymous function, telling the button what to do "on press."
+
+Answer #4:
+a. The movies are displayed in a lsit using the FlatList command.
+b. The detals displayed for a single movie by calling the title on press which opens up the rest of the item. It seems to be sort of like a python dictionary, where the movies all have keys, and when those keys are called, all the other information for that movie comes up.
