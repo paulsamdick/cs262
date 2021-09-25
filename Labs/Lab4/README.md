@@ -18,7 +18,7 @@ React Navigation's stack navigator provides a way for your app to transition bet
 The onPress event handler for the home screen component is specified as () => navigation.navigate('Details'). Can we just say navigation.navigate('Details')? Why or why not?
 
 Answer #3:
-The  ()=> specifies a anonymous function, telling the button what to do "on press."
+The  ()=> specifies a anonymous function, telling the button what to do "on press." Because of this I don't think it would work if we tried to remove the () =>.
 
 Answer #4:
 
