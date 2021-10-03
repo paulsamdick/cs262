@@ -8,6 +8,7 @@ Of what benefit was the refactoring phase of this lab?
 The refactoring phase of the lab clarified the structure of the code making it both easier to read and easier to adjust.
 
 What do the export commands do?
+
 The export commands tell the compiler to export the following function.
 
 This application uses stack navigation. What does the stack do here? What is the deepest this stack can get in this application?
