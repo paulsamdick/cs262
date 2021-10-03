@@ -3,6 +3,8 @@ CS 262 - Lab 5
 
 This lab is based on [CS-262, Lab 5](https://cs.calvin.edu/courses/cs/262/kvlinden/05design/lab.html)
 
+Lab Q&A:
+
 Of what benefit was the refactoring phase of this lab?
 
 The refactoring phase of the lab clarified the structure of the code making it both easier to read and easier to adjust.
