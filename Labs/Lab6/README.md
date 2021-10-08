@@ -1,6 +1,6 @@
 CS 262 - Lab 6
 
-This lab is based on [CS262 Lab6] ('https://cs.calvin.edu/courses/cs/262/kvlinden/06hci/lab.html')
+This lab is based on [CS262 Lab6] (https://cs.calvin.edu/courses/cs/262/kvlinden/06hci/lab.html)
 
 
 
