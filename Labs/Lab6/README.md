@@ -8,13 +8,9 @@ Answers to the lab questions:
 
 answer #1
 
-
-What do the hooks in this code do?
-
 They allow us to use the state feature without specifying a class. For example, GetBooks() is 
 a hook that enables us to use the state feature.
 
-
-Modify the URL to some invalid value and explain how the code responds.
+answer #2
 
 The app becomes blank with an invalid URL, nothing is displayed.
