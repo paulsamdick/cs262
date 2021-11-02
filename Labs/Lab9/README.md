@@ -18,7 +18,7 @@ user and password are stored as Heroku configuration variables rather than in th
 You can follow the links to the database:
 
 
- - <limitless-waters-50928.herokuapp.com>
+ - <https://limitless-waters-50928.herokuapp.com>
  
  - <https://limitless-waters-50928.herokuapp.com/players>
  
