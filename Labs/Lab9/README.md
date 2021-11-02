@@ -20,13 +20,13 @@ You can follow the links to the database:
 
  - <limitless-waters-50928.herokuapp.com>
  
- - <limitless-waters-50928.herokuapp.com/players>
+ - <https://limitless-waters-50928.herokuapp.com/players>
  
- - <limitless-waters-50928.herokuapp.com/players/1>
+ - <https://limitless-waters-50928.herokuapp.com/players/1>
 
- - <limitless-waters-50928.herokuapp.com/players/-1>
+ - <https://limitless-waters-50928.herokuapp.com/players/-1>
 
- - <limitless-waters-50928.herokuapp.com/blob>
+ - <https://limitless-waters-50928.herokuapp.com/blob>
 
 
  
