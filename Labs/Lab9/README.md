@@ -17,13 +17,16 @@ user and password are stored as Heroku configuration variables rather than in th
 
 You can follow the links to the database:
 
-https://git.heroku.com/limitless-waters-50928.git
 
-https://git.heroku.com/limitless-waters-50928.git/players
+ limitless-waters-50928.herokuapp.com
+ 
+ limitless-waters-50928.herokuapp.com/players
+ 
+ limitless-waters-50928.herokuapp.com/players/1
 
-https://git.heroku.com/limitless-waters-50928.git/players/1
+limitless-waters-50928.herokuapp.com/players/-1
 
-https://git.heroku.com/limitless-waters-50928.git/players/-1
+limitless-waters-50928.herokuapp.com/blob
 
-https://git.heroku.com/limitless-waters-50928.git/blob
+
  
