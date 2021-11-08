@@ -17,14 +17,6 @@ https://cryptic-mesa-88162.herokuapp.com/join
 
 ## 1.b Which of these endpoints implement actions that are idempotent? nullipotent?
 
-### idempotent: 
-
-https://cryptic-mesa-88162.herokuapp.com/players/:id
-
-https://cryptic-mesa-88162.herokuapp.com/players 
-
-(the above links are those which can allow us to edit the database: adding/editing/deleting a player)
-
 ### nullipotent:
 
 https://cryptic-mesa-88162.herokuapp.com/
