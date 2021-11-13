@@ -1,0 +1,83 @@
+Paul Dick, Lab 11 CS-262
+
+Lab5 App.js, home.js
+-Updated documentation, indentation, spacing between parentheses. (Please note, while I got my editor running, neither I nor my teammates were able 
+to make it give suggestions, thus I updated things manually). Here is the code:
+
+/*App.js contains the basic navigation capabilities for the Lab 5 application and is
+based on https://cs.calvin.edu/courses/cs/262/kvlinden/05design/lab.html
+@author Paul Dick for CS 262 Lab 5 
+@date 11/12/21
+*/
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from "./screens/home";
+import DetailsScreen from "./screens/details";
+import AboutScreen from "./screens/about";
+
+const Stack = createNativeStackNavigator();
+
+function App() {
+    return (
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName = 'Home'>
+                <Stack.Screen name = "Movies" component  = { HomeScreen } />
+                <Stack.Screen name = "Details" component = { DetailsScreen }  />
+                <Stack.Screen name = "About" component   = { AboutScreen } />
+            </Stack.Navigator>
+       </NavigationContainer>
+    );
+}
+export default App
+
+***********************************************************************************************
+Home.js
+***********************************************************************************************
+
+/*home.js contains the delete screen for the Lab 5 application and is
+based on https://cs.calvin.edu/courses/cs/262/kvlinden/05design/lab.html
+@author Paul Dick for CS 262 Lab 5 
+@date 11/12/21
+*/
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, FlatList} from 'react-native';
+import { globalStyles } from "/home/paul/LAB5/styles/global.js";
+import { titleStyle }   from "/home/paul/LAB5/styles/global.js";
+import { buttonStyles } from "/home/paul/LAB5/styles/global.js";
+
+export default function HomeScreen ({ navigation }) {
+    const [ reviews, setReviews ] = useState ([
+        { title: "Fellowship of the Ring",
+          rating: 8.8,
+          key: '1',
+          description : "some hobbits begin a quest." 
+        },
+        { title: "Two Towers", 
+          rating: 8.7,
+          key: '2',
+          description: 'Some dark lords try to take over the world.'
+        },
+        { title: "Return of the King",
+          rating: 8.9,
+          key: '3',
+          description: 'The dark lords are defeated, to much rejoicing.'
+        },
+    
+    ]);
+
+    return (
+      <View style={ globalStyles.container }>
+            <FlatList data={ reviews } renderItem={({ item })=> (
+                <TouchableOpacity onPress={() => navigation.navigate( 'Details', item )}>
+                    <Text style = { titleStyle.container }> { item.title } </Text>
+                </TouchableOpacity>
+            )} 
+            />
+            
+           <TouchableOpacity onPress={() => navigation.navigate( 'About' ) } style={ buttonStyles.button }>
+				              <Text style={ buttonStyles.buttonText }>About</Text>
+			</TouchableOpacity>
+        </View>
+    );
+}
